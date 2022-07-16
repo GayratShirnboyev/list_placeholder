@@ -6,19 +6,17 @@ Return the List
 
 */
 List func(n) {
-  int f = 0;
+  int f = 1;
   List c = [];
   while (f < n) {
-    f++;
+    c.add(f);
+    f = f + 2;
     print(f);
-    if (f % 2 == 1) {
-      c.add(f);
-    }
   }
 
   return c;
 }
 
 void main() {
-  print(func(4));
+  print(func(7));
 }
