@@ -8,10 +8,10 @@ Return the List
 
 List func(int n) {
   List l = [];
-  int x = 0;
-  while (x < n) {
-    l.add(x * x);
-    x -= 1;
+
+  while (0 < n) {
+    l.add(n * n);
+    n -= 1;
   }
   return l;
 }
