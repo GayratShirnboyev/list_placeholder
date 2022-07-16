@@ -11,9 +11,8 @@ List func(int n) {
   int f = 0;
   List c = [];
   while (f < n) {
-    f += 1;
-
     c.add(f);
+    f = f + 1;
   }
   return c;
 }
