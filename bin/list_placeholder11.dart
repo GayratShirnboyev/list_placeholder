@@ -9,8 +9,8 @@ List func(n) {
   int f = 0;
   List c = [];
   while (f < n) {
-    c.add(f);
-    f = f + 2;
+    c.add(f * f);
+    f = f + 1;
     print(f);
   }
 
@@ -18,5 +18,5 @@ List func(n) {
 }
 
 void main() {
-  print(func(7));
+  print(func(6));
 }
