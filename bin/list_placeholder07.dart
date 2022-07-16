@@ -9,12 +9,12 @@ List func(int M, int N, int K) {
   int f = 0;
   List c = [];
   while (N < K) {
-    c.add(N);
     N = N + M;
+    c.add(N);
   }
   return c;
 }
 
 void main() {
-  print(func(5, 10, 40));
+  print(func(5, 0, 40));
 }
