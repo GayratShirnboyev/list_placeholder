@@ -10,7 +10,7 @@ List func(int M, int N, int K) {
   List c = [];
   while (N < K) {
     N = N + M;
-    c.add(N);
+    c.add(N - M);
   }
   return c;
 }
