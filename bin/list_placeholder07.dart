@@ -5,16 +5,16 @@ Argument int M, N, K
 Return the List
 
 */
-List func(int M, int N, int K) {
+List func(int N, int K, int M) {
   int f = 0;
   List c = [];
   while (N < K) {
+    c.add(N);
     N = N + M;
-    c.add(N - M);
   }
   return c;
 }
 
 void main() {
-  print(func(5, 0, 40));
+  print(func(5, 40, 5));
 }
