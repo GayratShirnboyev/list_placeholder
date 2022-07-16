@@ -8,7 +8,7 @@ Return the List
 List func(int n) {
   int f = 0;
   List c = [];
-  while (f <= n) {
+  while (f < n) {
     f++;
     c.add(1);
   }
