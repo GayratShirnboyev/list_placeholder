@@ -9,7 +9,7 @@ List func(int n) {
   int c = 0;
   List f = [];
 
-  while (c <= n) {
+  while (c < n) {
     c++;
     f.add(0);
   }
@@ -17,5 +17,5 @@ List func(int n) {
 }
 
 void main() {
-  print(func(5));
+  print(func(3));
 }
